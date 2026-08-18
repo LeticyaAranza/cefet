@@ -1,0 +1,247 @@
+{% load static %}
+
+<section class="quiz">
+    <h2>Descubra sua Área voltada para Mecatrônica</h2>
+
+    <div class="subtitulo">
+        Responda às situações abaixo para encontrar um caminho relacionado com o seu perfil!
+    </div>
+
+    <div class="container-quiz">
+
+        <div class="barra-progresso">
+            <div class="progresso-preenchido" id="progresso-preenchido"></div>
+        </div>
+
+        <form id="quiz-form">
+
+            <!-- Questão 1 -->
+            <div class="container-questao active" data-question="1">
+                <div class="titulo-questao">
+                    1. Quando você precisa consertar ou montar algum equipamento ou dispositivo que quebrou ou veio desmontado, o que mais prende a sua atenção?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="robotica_comp">
+                        <span>Fico imaginando como programar o "cérebro" dele, os códigos que fazem funcionar sozinho e os comandos de inteligência artificial.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="automacao">
+                        <span>Fico curioso com a parte de automação, os painéis elétricos, sensores e como ligar tudo para funcionar em conjunto perfeitamente.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="eletronica_biomed">
+                        <span>Presto muita atenção na precisão dos circuitos eletrônicos, soldando componentes e testando se o sinal elétrico está limpo.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="mecanica_manut">
+                        <span>Gosto de analisar as peças mecânicas, engrenagens, a resistência dos materiais e fazer os encaixes físicos funcionarem sem travar.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="producao">
+                        <span>Fico pensando em como organizar o processo de fabricação, planejar o tempo de montagem e calcular os custos para produzir mais rápido.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 2 -->
+            <div class="container-questao" data-question="2">
+
+                <div class="titulo-questao">
+                    2. Se você pudesse escolher um projeto inovador de tecnologia para criar e apresentar na escola ou faculdade, qual escolheria?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="robotica">
+                        <span>Um braço robótico autônomo ou um robô inteligente capaz de desviar de obstáculos sozinho pela sala.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="automacao_manufatura">
+                        <span>Um sistema inteligente para uma casa ou fábrica que controla luzes, motores e temperatura automaticamente através de sensores conectados.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="biomedica">
+                        <span>Um aparelho médico de alta precisão ou uma prótese que se mexe através de pequenos comandos elétricos do corpo.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="veiculos">
+                        <span>Um veículo elétrico ou um carrinho autônomo guiado por sensores que anda sozinho pela pista.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="impressao3d">
+                        <span>Um objeto tridimensional complexo impresso do zero em uma impressora 3D industrial de grande porte.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 3 -->
+            <div class="container-questao" data-question="3">
+
+                <div class="titulo-questao">
+                    3. Qual tipo de desafio ou problema prático você acha mais divertido ou interessante de resolver?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="comp">
+                        <span>Fazer códigos de programação de baixo nível para microcontroladores conversarem perfeitamente com sensores físicos.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="manutencao">
+                        <span>Descobrir por que uma máquina complexa parou de funcionar e resolver a falha rapidamente trocando as peças corretas.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="producao">
+                        <span>Otimizar os passos de um processo de fabricação para produzir mais peças gastando menos tempo e energia.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="mecanica_cad">
+                        <span>Projetar o desenho técnico em 3D de um mecanismo garantindo que todas as medidas milimétricas encaixem sem erros.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="eletronica">
+                        <span>Testar placas de circuito impresso, medir correntes e garantir que o sistema eletrônico não tenha interferências.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 4 -->
+            <div class="container-questao" data-question="4">
+
+                <div class="titulo-questao">
+                    4. Qual destas tecnologias do futuro você acha mais fascinante e gostaria de acompanhar de perto no trabalho?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="veiculos">
+                        <span>Carros autônomos, frotas inteligentes e sistemas de transporte movidos a baterias de alta tensão.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="robotica_automacao">
+                        <span>Robôs colaborativos (cobots) que trabalham de forma segura lado a lado com as pessoas nas fábricas.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="impressao3d">
+                        <span>Impressoras 3D industriais criando peças metálicas e polímeras complexas sob demanda.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="biomedica">
+                        <span>Sistemas hospitalares de última geração com equipamentos de imagem e diagnóstico de altíssima precisão.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="comp_ind4">
+                        <span>Redes de computadores e sistemas embarcados inteligentes integrando o chão de fábrica à nuvem.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Questão 5 -->
+            <div class="container-questao" data-question="5">
+
+                <div class="titulo-questao">
+                    5. Como você prefere que seja a sua rotina de trabalho ou estudos práticos no dia a dia?
+                </div>
+
+                <div class="lista-opcoes">
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="pesquisa">
+                        <span>Em um laboratório de P&D (Pesquisa e Desenvolvimento), criando novos protótipos e testando inovações tecnológicas do zero.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="fabrica">
+                        <span>Direto no chão de fábrica ou em plantas industriais, supervisionando linhas de produção e processos automatizados.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="eletronica">
+                        <span>Em uma bancada eletrônica equipada com multímetros, ferro de solda, osciloscópios e placas de circuito.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="mecanica">
+                        <span>Em escritórios de projetos e engenharia, utilizando softwares de modelagem 3D e cálculos estruturais.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="manutencao">
+                        <span>Em ambientes dinâmicos de manutenção e suporte técnico, resolvendo problemas práticos de máquinas e equipamentos.</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Botão -->
+            <div class="container-botao">
+                <button type="button" id="next-btn" disabled>
+                    Avançar
+                </button>
+            </div>
+
+        </form>
+
+
+        <!-- Resultado -->
+        <div id="container-resultado">
+
+            <h2>Seu Resultado está Pronto!</h2>
+
+            <p>
+                Com base nas suas respostas, a área que mais combina com o seu perfil é:
+            </p>
+
+            <div class="caixa-resultado">
+
+                <h3 id="result-title">
+                    Área Principal
+                </h3>
+
+                <p id="result-description">
+                    Descrição detalhada da área combinada com o seu perfil.
+                </p>
+
+            </div>
+
+            <button type="button" id="restart-btn">
+                Refazer Quiz
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="{% static 'cursos/js/quiz_meca.js' %}"></script>

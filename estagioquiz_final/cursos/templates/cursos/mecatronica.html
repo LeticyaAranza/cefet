@@ -1,0 +1,61 @@
+{% extends "cursos/base.html" %}
+{% load static %}
+
+{% block title %}Mecatrônica{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cursos/css/curso.css' %}">
+<link rel="stylesheet" href="{% static 'cursos/css/quiz.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="pagina-curso">
+
+    <img src="{% static 'cursos/imagens/mecatronica.svg' %}" alt="Mecatrônica">
+
+    <div>
+
+        <h1>Curso de Mecatrônica</h1>
+
+        <p>
+            O curso de Mecatrônica integra mecânica,
+            eletrônica e programação para automação
+            industrial e robótica.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="o-que-aprende">
+
+    <div class="texto-curso">
+
+        <h2>O que se desenvolve em Mecatrônica?</h2>
+
+        <p>
+            Texto a ser definido.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="areas-atuacao">
+
+    <div class="texto-curso">
+
+        <h2>Áreas para atuar depois de Mecatrônica</h2>
+
+        <p>
+            Texto a ser definido.
+        </p>
+
+    </div>
+
+</section>
+
+{% include "cursos/components/meca_quiz.html" with quiz_curso="mecatronica" %}
+
+{% endblock %}

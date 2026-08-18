@@ -1,0 +1,190 @@
+{% load static %}
+
+<section class="quiz">
+
+    <h2>Descubra sua Área voltada para Edificações</h2>
+
+    <div class="subtitulo">
+        Responda às situações abaixo para encontrar o caminho relacionado com o seu perfil!
+    </div>
+
+    <div class="container-quiz">
+
+        <div class="barra-progresso">
+            <div class="progresso-preenchido" id="progresso-preenchido"></div>
+        </div>
+
+        <form id="quiz-form">
+
+            <!-- Pergunta 1 -->
+            <div class="container-questao active" data-question="1">
+                <div class="titulo-questao">
+                    1. Quando você olha para uma construção, edifício ou obra pronta, o que mais prende a sua atenção?
+                </div>
+                <div class="lista-opcoes">
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="arq">
+                        <span>Fico imaginando o design da fachada, a distribuição dos cômodos, a ventilação natural e a estética dos ambientes.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="struct_geo">
+                        <span>Fico curioso sobre a solidez da estrutura, as vigas e pilares que sustentam tudo e como foi feita a fundação no solo.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="inst">
+                        <span>Presto muita atenção nas tubulações de água, esgoto, fiação elétrica e em como a infraestrutura interna funciona.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="sustainability">
+                        <span>Gosto de pensar nos materiais ecológicos utilizados, na eficiência energética e em como o edifício impacta o meio ambiente.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="gestao">
+                        <span>Fico pensando em como a obra foi organizada, no planejamento dos prazos, na segurança dos operários e nos custos de construção.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="container-questao" data-question="2">
+                <div class="titulo-questao">
+                    2. Se te dessem uma tarde livre para resolver um problema prático em uma construção ou reforma, qual você escolheria?
+                </div>
+                <div class="lista-opcoes">
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="struct">
+                        <span>Calcular a resistência de uma estrutura ou verificar se uma laje e suas vigas estão suportando o peso corretamente.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="topo">
+                        <span>Fazer medições no terreno com equipamentos topográficos para garantir o nivelamento e a exatidão das divisas.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="arq_desenho">
+                        <span>Corrigir ou detalhar um projeto técnico em software CAD, ajustando cortes, fachadas e plantas baixas.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="patologia">
+                        <span>Investigar a origem de uma infiltração, trinca na parede ou um problema de umidade e propor a solução técnica adequada.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="gestao">
+                        <span>Organizar o cronograma de entrega de materiais, supervisionar a equipe de trabalho e garantir que o orçamento não estoure.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="container-questao" data-question="3">
+                <div class="titulo-questao">
+                    3. Qual dessas situações mais se parece com a forma como você gosta de aprender ou resolver desafios?
+                </div>
+                <div class="lista-opcoes">
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="arq_desenho">
+                        <span>Expressão criativa e visual: gosto de desenhar, projetar espaços funcionais e pensar no conforto de quem vai usar o local.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="struct_patologia">
+                        <span>Investigação técnica: gosto de analisar normas técnicas, fazer cálculos estruturais rigorosos e diagnosticar falhas construtivas.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="topo_inst">
+                        <span>Precisão de campo: gosto de trabalhos práticos que exigem exatidão, seja medindo terrenos ou planejando instalações prediais.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="gestao_orc">
+                        <span>Visão estratégica e econômica: gosto de gerenciar recursos, cotar materiais, analisar planilhas de custos e liderar equipes.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="sustainability">
+                        <span>Inovação e sustentabilidade: gosto de pesquisar novos materiais de construção menos poluentes e soluções de eficiência energética.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="container-questao" data-question="4">
+                <div class="titulo-questao">
+                    4. Como você prefere que seja o seu ambiente de trabalho ou estudo no futuro?
+                </div>
+                <div class="lista-opcoes">
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="arq_desenho">
+                        <span>Um escritório de projetos criativo, focado em desenho técnico, modelagem 3D e desenvolvimento de conceitos arquitetônicos.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="gestao_canteiro">
+                        <span>Um canteiro de obras dinâmico, onde eu acompanhe a execução física da construção, resolva imprevistos e lide diretamente com equipes.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="topo">
+                        <span>Trabalho externo misto, indo a campo para fazer levantamentos topográficos, inspeções e vistorias técnicas.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="struct_patologia">
+                        <span>Um laboratório ou escritório de engenharia focado em consultoria estrutural, perícias e testes de materiais.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="sustainability">
+                        <span>Um espaço voltado para consultoria de construções verdes, eficiência energética e inovação sustentável.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="container-questao" data-question="5">
+                <div class="titulo-questao">
+                    5. O que mais te daria orgulho de ver pronto daqui a alguns anos?
+                </div>
+                <div class="lista-opcoes">
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="arq_desenho">
+                        <span>Ver uma casa, edifício ou espaço público projetado por mim sendo habitado e elogiado pela sua beleza e funcionalidade.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="gestao_canteiro">
+                        <span>Saber que ajudei a erguer e gerenciar um grande empreendimento do início ao fim, entregando a obra no prazo e com excelência.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="struct_patologia">
+                        <span>Garantir que estruturas complexas sejam perfeitamente seguras e resolver patologias difíceis que salvaguardem vidas e patrimônios.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="sustainability">
+                        <span>Contribuir para a preservação do planeta através de projetos de construção sustentável e uso racional de recursos.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q5" value="topo_inst">
+                        <span>Ver a infraestrutura invisível (redes, instalações e nivelamentos precisos) funcionando com perfeição e sem falhas em grandes obras.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-botao">
+                <button type="button" id="next-btn" disabled>
+                    Avançar
+                </button>
+            </div>
+
+        </form>
+
+        <div id="container-resultado" style="display: none;">
+            <h2>Seu Resultado está Pronto!</h2>
+            <p>Com base nas suas respostas, a área de Edificações que mais combina com o seu perfil é:</p>
+
+            <div class="caixa-resultado">
+                <h3 id="result-title">Área Principal</h3>
+                <p id="result-description">Descrição detalhada da área combinada com o seu perfil.</p>
+            </div>
+
+            <button type="button" id="restart-btn">
+                Refazer Quiz
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="{% static 'cursos/js/quiz_edif.js' %}"></script>
