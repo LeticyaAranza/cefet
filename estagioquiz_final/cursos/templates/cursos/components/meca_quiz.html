@@ -15,44 +15,42 @@
 
         <form id="quiz-form">
 
-            <!-- Questão 1 -->
             <div class="container-questao active" data-question="1">
                 <div class="titulo-questao">
-                    1. Quando você precisa consertar ou montar algum equipamento ou dispositivo que quebrou ou veio desmontado, o que mais prende a sua atenção?
+                    1. Quando você entra em um lugar cheio de engenhocas, máquinas ou eletrônicos, qual é a primeira coisa que atrai o seu foco?
                 </div>
 
                 <div class="lista-opcoes">
 
                     <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="mecanica_manut">
+                        <span>Fico imaginando o tamanho do desafio que foi juntar tantas peças físicas diferentes para aquilo ali ficar em pé e se mexer.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
                         <input type="radio" name="q1" value="robotica_comp">
-                        <span>Fico imaginando como programar o "cérebro" dele, os códigos que fazem funcionar sozinho e os comandos de inteligência artificial.</span>
+                        <span>Fico curioso sobre como as instruções lógicas e os comandos invisíveis foram pensados para fazer aquilo executar movimentos sozinhos.</span>
                     </label>
 
                     <label class="rotulo-opcao">
                         <input type="radio" name="q1" value="automacao">
-                        <span>Fico curioso com a parte de automação, os painéis elétricos, sensores e como ligar tudo para funcionar em conjunto perfeitamente.</span>
-                    </label>
-
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q1" value="eletronica_biomed">
-                        <span>Presto muita atenção na precisão dos circuitos eletrônicos, soldando componentes e testando se o sinal elétrico está limpo.</span>
-                    </label>
-
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q1" value="mecanica_manut">
-                        <span>Gosto de analisar as peças mecânicas, engrenagens, a resistência dos materiais e fazer os encaixes físicos funcionarem sem travar.</span>
+                        <span>Fico reparando nos botões, nos painéis de controle com luzes e na rede de cabos que conecta tudo para acionar os comandos à distância.</span>
                     </label>
 
                     <label class="rotulo-opcao">
                         <input type="radio" name="q1" value="producao">
-                        <span>Fico pensando em como organizar o processo de fabricação, planejar o tempo de montagem e calcular os custos para produzir mais rápido.</span>
+                        <span>Fico pensando no planejamento por trás daquilo: quem organizou a equipe, quanto custou para fabricar e como planejaram a produção em série.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="eletronica_biomed">
+                        <span>Fico prestando atenção nos detalhes de precisão, nos mínimos componentes e na soldagem caprichada que faz o circuito funcionar sem falhas.</span>
                     </label>
 
                 </div>
             </div>
 
 
-            <!-- Questão 2 -->
             <div class="container-questao" data-question="2">
 
                 <div class="titulo-questao">
@@ -90,45 +88,43 @@
             </div>
 
 
-            <!-- Questão 3 -->
             <div class="container-questao" data-question="3">
 
                 <div class="titulo-questao">
-                    3. Qual tipo de desafio ou problema prático você acha mais divertido ou interessante de resolver?
+                    3. Se você estivesse num projeto em equipe onde todo mundo empacou sem saber o que fazer, qual seria a sua reação natural para salvar o grupo?
                 </div>
 
                 <div class="lista-opcoes">
 
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q3" value="comp">
-                        <span>Fazer códigos de programação de baixo nível para microcontroladores conversarem perfeitamente com sensores físicos.</span>
-                    </label>
-
-                    <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="manutencao">
-                        <span>Descobrir por que uma máquina complexa parou de funcionar e resolver a falha rapidamente trocando as peças corretas.</span>
+                        <span>Eu pegaria as ferramentas, tentaria encaixar as peças de outro jeito e resolveria o problema na base da tentativa e do teste prático.</span>
                     </label>
 
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="producao">
-                        <span>Otimizar os passos de um processo de fabricação para produzir mais peças gastando menos tempo e energia.</span>
+                        <span>Eu sentaria para reorganizar o cronograma, dividiria o que falta fazer por etapas e daria um jeito de todo mundo focar no prazo final.</span>
                     </label>
 
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q3" value="mecanica_cad">
-                        <span>Projetar o desenho técnico em 3D de um mecanismo garantindo que todas as medidas milimétricas encaixem sem erros.</span>
+                        <input type="radio" name="q3" value="pesquisa">
+                        <span>Eu proporia uma mudança criativa e inovadora, pensando fora da caixa para inventar uma solução que ninguém tinha pensado antes.</span>
                     </label>
 
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="eletronica">
-                        <span>Testar placas de circuito impresso, medir correntes e garantir que o sistema eletrônico não tenha interferências.</span>
+                        <span>Eu investigaria os cabos, checaria as conexões e testaria cada fio até achar exatamente onde a energia ou o sinal parou de passar.</span>
+                    </label>
+
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="comp">
+                        <span>Eu abriria o computador ou a interface de comando para reajustar as configurações, corrigir os comandos e testar se a lógica agora responde direito.</span>
                     </label>
 
                 </div>
             </div>
 
 
-            <!-- Questão 4 -->
             <div class="container-questao" data-question="4">
 
                 <div class="titulo-questao">
@@ -166,7 +162,6 @@
             </div>
 
 
-            <!-- Questão 5 -->
             <div class="container-questao" data-question="5">
 
                 <div class="titulo-questao">
@@ -204,7 +199,6 @@
             </div>
 
 
-            <!-- Botão -->
             <div class="container-botao">
                 <button type="button" id="next-btn" disabled>
                     Avançar
@@ -214,7 +208,6 @@
         </form>
 
 
-        <!-- Resultado -->
         <div id="container-resultado">
 
             <h2>Seu Resultado está Pronto!</h2>
