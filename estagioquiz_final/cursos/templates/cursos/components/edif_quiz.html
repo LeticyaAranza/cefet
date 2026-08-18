@@ -16,65 +16,62 @@
 
         <form id="quiz-form">
 
-            <!-- Pergunta 1 -->
             <div class="container-questao active" data-question="1">
                 <div class="titulo-questao">
-                    1. Quando você olha para uma construção, edifício ou obra pronta, o que mais prende a sua atenção?
+                    1. Quando você faz um trabalho em grupo no colégio ou monta um projeto com amigos, qual é o seu papel favorito na equipe?
                 </div>
                 <div class="lista-opcoes">
                     <label class="rotulo-opcao">
                         <input type="radio" name="q1" value="arq">
-                        <span>Fico imaginando o design da fachada, a distribuição dos cômodos, a ventilação natural e a estética dos ambientes.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q1" value="struct_geo">
-                        <span>Fico curioso sobre a solidez da estrutura, as vigas e pilares que sustentam tudo e como foi feita a fundação no solo.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q1" value="inst">
-                        <span>Presto muita atenção nas tubulações de água, esgoto, fiação elétrica e em como a infraestrutura interna funciona.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q1" value="sustainability">
-                        <span>Gosto de pensar nos materiais ecológicos utilizados, na eficiência energética e em como o edifício impacta o meio ambiente.</span>
+                        <span>Eu prefiro cuidar da parte visual, dos slides, caprichar no design e deixar tudo organizado e bonito no computador.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q1" value="gestao">
-                        <span>Fico pensando em como a obra foi organizada, no planejamento dos prazos, na segurança dos operários e nos custos de construção.</span>
+                        <span>Eu gosto de liderar, cobrar o pessoal para entregar no prazo e resolver os imprevistos que aparecem na hora.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="gestao_orc">
+                        <span>Eu prefiro organizar os números, ver quanto vamos gastar com os materiais e garantir que o planejamento financeiro feche.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="sustainability">
+                        <span>Eu fico de olho para ver se todo mundo está usando os equipamentos certos, se ninguém vai se machucar e se as regras estão sendo seguidas.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q1" value="struct_geo">
+                        <span>Eu gosto de testar se as coisas estão firmes, checar a qualidade do que foi feito e ver se o resultado final aguenta o tranco.</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Pergunta 2 -->
             <div class="container-questao" data-question="2">
                 <div class="titulo-questao">
-                    2. Se te dessem uma tarde livre para resolver um problema prático em uma construção ou reforma, qual você escolheria?
+                    2. Se te déssemos uma tarde livre para resolver um desafio prático de organização ou criação, qual você escolheria?
                 </div>
                 <div class="lista-opcoes">
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q2" value="struct">
-                        <span>Calcular a resistência de uma estrutura ou verificar se uma laje e suas vigas estão suportando o peso corretamente.</span>
+                        <input type="radio" name="q2" value="arq_desenho">
+                        <span>Passar horas no computador testando programas de desenho, modelando espaços e criando maquetes digitais em 3D.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q2" value="topo">
-                        <span>Fazer medições no terreno com equipamentos topográficos para garantir o nivelamento e a exatidão das divisas.</span>
+                        <span>Ir para o quintal ou para a rua verificar como as coisas estão estruturadas, medindo espaços e acompanhando algo sendo montado de perto.</span>
                     </label>
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q2" value="arq_desenho">
-                        <span>Corrigir ou detalhar um projeto técnico em software CAD, ajustando cortes, fachadas e plantas baixas.</span>
+                        <input type="radio" name="q2" value="gestao_orc">
+                        <span>Fazer planilhas detalhadas, pesquisar preços em vários lugares e calcular o custo exato para realizar uma festa ou evento sem estourar o dinheiro.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q2" value="sustainability">
+                        <span>Organizar o espaço de trabalho para evitar que alguém tropece em fios, caia ou se machuque com ferramentas espalhadas.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q2" value="patologia">
-                        <span>Investigar a origem de uma infiltração, trinca na parede ou um problema de umidade e propor a solução técnica adequada.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q2" value="gestao">
-                        <span>Organizar o cronograma de entrega de materiais, supervisionar a equipe de trabalho e garantir que o orçamento não estoure.</span>
+                        <span>Analisar amostras de produtos diferentes para ver qual é o mais forte, durável e resistente antes de comprar.</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Pergunta 3 -->
             <div class="container-questao" data-question="3">
                 <div class="titulo-questao">
                     3. Qual dessas situações mais se parece com a forma como você gosta de aprender ou resolver desafios?
@@ -82,28 +79,27 @@
                 <div class="lista-opcoes">
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="arq_desenho">
-                        <span>Expressão criativa e visual: gosto de desenhar, projetar espaços funcionais e pensar no conforto de quem vai usar o local.</span>
+                        <span>Tentativa e erro visual: gosto de mexer em softwares, alterar formas na tela e ver o projeto ganhar vida graficamente.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="struct_patologia">
-                        <span>Investigação técnica: gosto de analisar normas técnicas, fazer cálculos estruturais rigorosos e diagnosticar falhas construtivas.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q3" value="topo_inst">
-                        <span>Precisão de campo: gosto de trabalhos práticos que exigem exatidão, seja medindo terrenos ou planejando instalações prediais.</span>
+                        <span>Ação em tempo real: gosto de ver o problema acontecendo na prática, conversar com as pessoas envolvidas e achar uma solução rápida para o imprevisto.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="gestao_orc">
-                        <span>Visão estratégica e econômica: gosto de gerenciar recursos, cotar materiais, analisar planilhas de custos e liderar equipes.</span>
+                        <span>Lógica financeira: gosto de cruzar dados, comparar tabelas de preços e achar a opção mais econômica e viável.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q3" value="sustainability">
-                        <span>Inovação e sustentabilidade: gosto de pesquisar novos materiais de construção menos poluentes e soluções de eficiência energética.</span>
+                        <span>Prevenção de riscos: gosto de antecipar o perigo, olhar os detalhes e criar regras para garantir que nada dê errado de forma perigosa.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q3" value="struct_geo">
+                        <span>Teste de resistência: gosto de avaliar fisicamente se um material aguenta peso, pressão ou o uso diário sem quebrar.</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Pergunta 4 -->
             <div class="container-questao" data-question="4">
                 <div class="titulo-questao">
                     4. Como você prefere que seja o seu ambiente de trabalho ou estudo no futuro?
@@ -111,28 +107,27 @@
                 <div class="lista-opcoes">
                     <label class="rotulo-opcao">
                         <input type="radio" name="q4" value="arq_desenho">
-                        <span>Um escritório de projetos criativo, focado em desenho técnico, modelagem 3D e desenvolvimento de conceitos arquitetônicos.</span>
+                        <span>Um escritório moderno, com ar-condicionado, focado em telas, modelando projetos criativos em 3D e desenhando plantas.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q4" value="gestao_canteiro">
-                        <span>Um canteiro de obras dinâmico, onde eu acompanhe a execução física da construção, resolva imprevistos e lide diretamente com equipes.</span>
+                        <span>Um ambiente dinâmico e que muda todo dia, circulando por lugares em construção, conversando com equipes e resolvendo o ritmo das entregas.</span>
                     </label>
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q4" value="topo">
-                        <span>Trabalho externo misto, indo a campo para fazer levantamentos topográficos, inspeções e vistorias técnicas.</span>
-                    </label>
-                    <label class="rotulo-opcao">
-                        <input type="radio" name="q4" value="struct_patologia">
-                        <span>Um laboratório ou escritório de engenharia focado em consultoria estrutural, perícias e testes de materiais.</span>
+                        <input type="radio" name="q4" value="gestao_orc">
+                        <span>Um escritório organizado, lidando com planilhas de custos, orçamentos, negociações com fornecedores e planejamento de prazos.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q4" value="sustainability">
-                        <span>Um espaço voltado para consultoria de construções verdes, eficiência energética e inovação sustentável.</span>
+                        <span>Um ambiente onde o foco principal seja cuidar do bem-estar, da integridade física e da proteção das pessoas ao redor.</span>
+                    </label>
+                    <label class="rotulo-opcao">
+                        <input type="radio" name="q4" value="patologia">
+                        <span>Um espaço que misture escritório e testes práticos, avaliando a resistência e a durabilidade de produtos e materiais reais.</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Pergunta 5 -->
             <div class="container-questao" data-question="5">
                 <div class="titulo-questao">
                     5. O que mais te daria orgulho de ver pronto daqui a alguns anos?
@@ -140,23 +135,23 @@
                 <div class="lista-opcoes">
                     <label class="rotulo-opcao">
                         <input type="radio" name="q5" value="arq_desenho">
-                        <span>Ver uma casa, edifício ou espaço público projetado por mim sendo habitado e elogiado pela sua beleza e funcionalidade.</span>
+                        <span>Ver uma planta ou um modelo digital incrível em 3D que eu ajudei a desenhar virando um projeto real.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q5" value="gestao_canteiro">
-                        <span>Saber que ajudei a erguer e gerenciar um grande empreendimento do início ao fim, entregando a obra no prazo e com excelência.</span>
+                        <span>Olhar para uma grande construção erguida e saber que ajudei a coordenar e fiscalizar para que ela saísse perfeita.</span>
                     </label>
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q5" value="struct_patologia">
-                        <span>Garantir que estruturas complexas sejam perfeitamente seguras e resolver patologias difíceis que salvaguardem vidas e patrimônios.</span>
+                        <input type="radio" name="q5" value="gestao_orc">
+                        <span>Saber que ajudei a planejar financeiramente uma grande obra, garantindo que tudo coubesse no orçamento sem faltar dinheiro.</span>
                     </label>
                     <label class="rotulo-opcao">
                         <input type="radio" name="q5" value="sustainability">
-                        <span>Contribuir para a preservação do planeta através de projetos de construção sustentável e uso racional de recursos.</span>
+                        <span>Saber que minhas orientações e normas de segurança evitaram acidentes e protegeram dezenas de trabalhadores.</span>
                     </label>
                     <label class="rotulo-opcao">
-                        <input type="radio" name="q5" value="topo_inst">
-                        <span>Ver a infraestrutura invisível (redes, instalações e nivelamentos precisos) funcionando com perfeição e sem falhas em grandes obras.</span>
+                        <input type="radio" name="q5" value="patologia">
+                        <span>Ter a certeza de que os materiais aprovados pelas minhas análises tornaram as construções muito mais seguras e duráveis.</span>
                     </label>
                 </div>
             </div>
